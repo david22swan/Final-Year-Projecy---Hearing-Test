@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <!-- Upper Layout, contains custom Sound Heard Button -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.5"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="196dp"
+            android:layout_height="0dp"
+            android:id="@+id/btnSound"
+            android:background="@drawable/press"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.80"
+            android:text="@string/btn_sound"
+            tools:ignore="NestedWeights" />
+    </LinearLayout>
+    <!-- Lower Layout, contains Begin Test and Cancel Buttons -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.06">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_test"
+            android:id="@+id/btnStart"
+            android:layout_gravity="center_horizontal" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="15dp"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_cancel"
+            android:id="@+id/btnCancel"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</LinearLayout>

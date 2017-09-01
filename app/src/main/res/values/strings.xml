@@ -1,0 +1,191 @@
+<resources>
+    <string name="app_name">Kainos Hearing Test</string>
+
+    <!-- Button and Label text for Login Screen -->
+    <string name="lbl_username">Username</string>
+    <string name="lbl_password">Password</string>
+    <string name="btn_forgotPassword">Forgot Password</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_blindtest">Anonymous Test</string>
+    <string name="lbl_loadError">The local file could not be retrieved</string>
+    <string name="lbl_loginError">The entered Login details did not match</string>
+    <string name="lbl_forgotPasswordError">The entered username does not exist</string>
+    <string name="lbl_emailError">The reminder could not be sent</string>
+    <string name="lbl_emailSent">The reminder has been sent</string>
+    <string name="title_activity_home">Hearing Test Application</string>
+
+    <!-- Pre-test screen -->
+    <string name="chk_volume">Volume Set?</string>
+    <string name="lbl_setvolume">Please set your volume to the lowest level at which you can still hear the test sound.</string>
+    <string name="chk_headphones">Headphones On?</string>
+    <string name="lbl_headphones">Please put on a pair of headphones to insure test accuracy</string>
+    <string name="btn_testvolume">Test Volume</string>
+    <string name="btn_test">Begin Test</string>
+    <string name="tst_checkvolume">Please set the volume</string>
+    <string name="tst_checkheadphones">Please insert headphones</string>
+    <string name="title_activity_pre_test">Pre-Test Screen</string>
+
+    <!-- Test Screen -->
+    <string name="btn_sound">Sound Heard</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="title_activity_results">Test Results</string>
+    <string name="lbl_soundplaying">Sound playing: </string>
+    <string name="lbl_testintruction">Please press the centre button whenever you hear a sound</string>
+    <string name="lbl_updateError">The local save file could not be updated with new test results</string>
+    <string name="title_activity_test">Test Screen</string>
+
+    <!-- Result Screen -->
+    <string name="btn_finish">Finish</string>
+    <string name="lbl_volumeMessage">StandIn</string>
+    <string name="lbl_volume">Tested at volume level: </string>
+    <string name="title_activity_result">Results Screen</string>
+    <string-array name="horizontalAxis_array">
+        <item>125hz</item>
+        <item>250hz</item>
+        <item>500hz</item>
+        <item>1Khz</item>
+        <item>2Khz</item>
+        <item>4Khz</item>
+        <item>6Khz</item>
+        <item>8Khz</item>
+    </string-array>
+    <string-array name="verticalAxis_array">
+        <item>Missed</item>
+        <item>100%</item>
+        <item>80%</item>
+        <item>60%</item>
+        <item>40%</item>
+        <item>20%</item>
+    </string-array>
+
+    <!-- Register Screen -->
+    <string name="lbl_passwordConfirm">Confirm Password</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_name">Name</string>
+    <string name="lbl_date">Date of Birth</string>
+    <string name="lbl_gender">Gender</string>
+    <string-array name="gender_array">
+        <item>Select a Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="lbl_usernameValidate">The username must consist of only letters and numbers and be between 6 and 14 characters in length.</string>
+    <string name="lbl_usernameTaken">The entered username is taken</string>
+    <string name="lbl_passwordValidate">The password must be between 8 and 16 characters in length and contain only letters and numbers</string>
+    <string name="lbl_nameValidate">The name must consist of only letters and numbers and bet between 8 and 20 characters in length</string>
+    <string name="lbl_emailValidate">The email does not match the correct format</string>
+    <string name="lbl_dobValidate">The entered date of birth does not match the correct format</string>
+    <string name="lbl_genderValidate">A gender must be selected</string>
+    <string name="lbl_classError">The global class could not be created</string>
+    <string name="lbl_saveError">The saved local file could not be created</string>
+    <string name="hnt_date">yyyy/mm/dd</string>
+    <string name="hnt_email">jane01@yahoo.co.uk</string>
+    <string name="title_activity_register">Register Screen</string>
+
+    <!-- Account Screen -->
+    <string name="btn_savedResults">Saved Results</string>
+    <string name="btn_accountInfo">Account Information</string>
+    <string name="btn_logout">Log Out</string>
+    <string name="lbl_noResults">No saved results exist</string>
+    <string name="title_activity_account">Account Screen</string>
+    <string name="lbl__nameStub">Name: </string>
+    <string name="lbl__usernameStub">Username: </string>
+    <string name="lbl__emailStub">Email: </string>
+
+    <!-- Account Information Screen -->
+    <string name="btn_update">Update</string>
+    <string name="title_activity_account_info">Account Information Screen</string>
+    <string name="lbl_reloadError">There has been an error with your profile, please logout and log back in.</string>
+
+    <!-- Stored Results Screen -->
+    <string name="btn_compare">Compare</string>
+    <string name="btn_delete">Delete Entry</string>
+    <string name="btn_back">Back</string>
+    <string name="title_activity_stored_results">Stored Results Screen</string>
+
+    <!-- Compare Results Screen -->
+    <string name="lbl_averageForAge">Average Volume level for your Age: </string>
+    <string name="lbl_averageOther">Comparison Test Volume Level: </string>
+    <string-array name="compare_array">
+        <item>Average for Age</item>
+        <item>Compare to First Test</item>
+        <item>Compare to Latest Test</item>
+        <item>Compare to Previous Test</item>
+    </string-array>
+    <string name="lbl_comparisonColor">The comparison result is shown in red</string>
+    <string name="lbl_comparisonError">You are trying to compare the same results</string>
+    <string name="title_activity_compare_results">Compare Results Screen</string>
+
+    <!-- Stored Thresholds -->
+    <!-- Volume thresholds are stored as 100 times their actually value t account for lack of double/float array -->
+    <integer-array name="volume_thresholds">
+        <item>142</item>
+        <item>214</item>
+        <item>264</item>
+        <item>400</item>
+        <item>800</item>
+        <item>528</item>
+    </integer-array>
+    <integer-array name="frequency_20">
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>4</item>
+        <item>4</item>
+        <item>3</item>
+    </integer-array>
+    <integer-array name="frequency_30">
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>3</item>
+    </integer-array>
+    <integer-array name="frequency_40">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>3</item>
+        <item>2</item>
+        <item>2</item>
+    </integer-array>
+    <integer-array name="frequency_50">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </integer-array>
+    <integer-array name="frequency_M60">
+        <item>2</item>
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </integer-array>
+    <integer-array name="frequency_F60">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>3</item>
+        <item>2</item>
+        <item>2</item>
+    </integer-array>
+
+</resources>

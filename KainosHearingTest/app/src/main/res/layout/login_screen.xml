@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <!-- Upper Layout, contains TextBoxes-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16">
+        <!-- Username Label and TextBox -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/lbl_username"
+            android:id="@+id/lblUsername"
+            android:layout_gravity="center_horizontal" />
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/txtUsername"
+            android:layout_gravity="center_horizontal" />
+        <!-- Password Label and TextBox -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_password"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/txtPassword"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <!-- Lower Layout, contains buttons -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.14">
+        <!-- Login Button, links to the login page if username and password are correct -->
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_login"
+            android:id="@+id/btnLogin"
+            android:layout_gravity="center_horizontal" />
+        <!-- Register Button, links to the register page-->
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_register"
+            android:id="@+id/btnRegister"
+            android:layout_gravity="center_horizontal" />
+        <!-- Forgot Password Button, Sends email containing password if username exists-->
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_forgotPassword"
+            android:id="@+id/btnForgotPassword"
+            android:layout_gravity="center_horizontal" />
+        <!-- Blind Test Button, links to the Pre-Test screen-->
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_blindtest"
+            android:id="@+id/btnBlindTest"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</LinearLayout>

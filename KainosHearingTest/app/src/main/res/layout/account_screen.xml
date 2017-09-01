@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+    android:weightSum="1">
+    <!-- Full Layout, contains TextViews and Buttons -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.25">
+
+        <!-- Name TextView -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Actual Name"
+            android:id="@+id/lblName"
+            android:layout_gravity="center_horizontal" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="15dp"/>
+
+        <!-- Username TextView -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="UserName"
+            android:id="@+id/lblUsername"
+            android:layout_gravity="center_horizontal" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="15dp"/>
+
+        <!-- Email TextView -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="User's Email"
+            android:id="@+id/lblEmail"
+            android:layout_gravity="center_horizontal" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="60dp"/>
+
+        <!-- Begin Test Button -->
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_test"
+            android:id="@+id/btnStartTest"
+            android:layout_gravity="center_horizontal" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="10dp"/>
+
+        <!-- Saved Results Button -->
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_savedResults"
+            android:id="@+id/btnSavedResults"
+            android:layout_gravity="center_horizontal" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="10dp"/>
+
+        <!-- Account Information Button -->
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_accountInfo"
+            android:id="@+id/btnAccountInfo"
+            android:layout_gravity="center_horizontal" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="10dp"/>
+
+        <!-- Logout Button -->
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_logout"
+            android:id="@+id/btnLogOut"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

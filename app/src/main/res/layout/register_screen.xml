@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <!-- Upper Layout, contains the Profile Text Boxes, Labels and Spinner -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.6">
+        <!-- Username Text Box and Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_username"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/txtUsername"
+            android:layout_gravity="center_horizontal" />
+        <!-- Password Text Box and Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_password"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/txtPassword"
+            android:layout_gravity="center_horizontal" />
+        <!-- Name Text Box and Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_name"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/txtName"
+            android:layout_gravity="center_horizontal" />
+        <!-- Email Text Box and Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_email"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/txtEmail"
+            android:hint="@string/hnt_email"
+            android:layout_gravity="center_horizontal" />
+        <!-- DoB Text Box and Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_date"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/txtDate"
+            android:hint="@string/hnt_date"
+            android:layout_gravity="center_horizontal" />
+        <!-- Gender Spinner and Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_gender"
+            android:layout_gravity="center_horizontal" />
+
+        <Spinner
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnrGender"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+    <!-- Lower Layout, contains the Register and Cancel Buttons -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.4">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_register"
+            android:id="@+id/btnRegister"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_cancel"
+            android:id="@+id/btnCancel"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</LinearLayout>

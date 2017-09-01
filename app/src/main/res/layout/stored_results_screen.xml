@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+        <!-- Upper Layout, Contains the GraphView -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.54">
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="20dp"/>
+
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/graph"/>
+
+        </LinearLayout>
+        <!-- Middle Layout, Contains the Results spinner and the compare button -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="320dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.32">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/lbl_volume"
+                android:id="@+id/lblVolumeMessage"
+                android:layout_gravity="center_horizontal" />
+
+            <Spinner
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spnrTests"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_compare"
+                android:id="@+id/btnCompare"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+        <!-- Lower Layout, Contains the Delete Entry and Back Buttons -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.1">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:text="@string/btn_back"
+                android:id="@+id/btnBack"
+                android:layout_gravity="center_horizontal" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="10dp"/>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:text="@string/btn_delete"
+                android:id="@+id/btnDelete"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+</LinearLayout>

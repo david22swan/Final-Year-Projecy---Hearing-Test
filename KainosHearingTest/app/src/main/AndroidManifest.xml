@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uk.ac.dswan01.kainoshearingtest">
+
+    <!-- Grants the application permission to connect to the internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Compatible screens sizes set -->
+    <compatible-screens>
+        <!-- all small size screens -->
+        <screen android:screenSize="small" android:screenDensity="ldpi" />
+        <screen android:screenSize="small" android:screenDensity="mdpi" />
+        <screen android:screenSize="small" android:screenDensity="hdpi" />
+        <screen android:screenSize="small" android:screenDensity="xhdpi" />
+        <!-- all normal size screens -->
+        <screen android:screenSize="normal" android:screenDensity="ldpi" />
+        <screen android:screenSize="normal" android:screenDensity="mdpi" />
+        <screen android:screenSize="normal" android:screenDensity="hdpi" />
+        <screen android:screenSize="normal" android:screenDensity="xhdpi" />
+
+        <!-- all large size screens -->
+        <screen android:screenSize="large" android:screenDensity="ldpi" />
+        <screen android:screenSize="large" android:screenDensity="mdpi" />
+        <screen android:screenSize="large" android:screenDensity="hdpi" />
+        <screen android:screenSize="large" android:screenDensity="xhdpi" />
+
+        <!-- support for Xperia Z, Galaxy S4 and HTC One -->
+        <screen android:screenDensity="480" android:screenSize="normal" />
+        <screen android:screenDensity="480" android:screenSize="large" />
+    </compatible-screens>
+
+    <application
+        android:name=".standalone.Global"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- Activities are declared and starting activity is set -->
+        <activity
+            android:name=".activities.login.MainActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait">
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.test.PreTestActivity"
+            android:label="@string/title_activity_pre_test"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.test.TestActivity"
+            android:label="@string/title_activity_test"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.results.ResultsActivity"
+            android:label="@string/title_activity_result"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.login.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.account.AccountActivity"
+            android:label="@string/title_activity_account"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.account.AccountInfoActivity"
+            android:label="@string/title_activity_account_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.results.StoredResultsActivity"
+            android:label="@string/title_activity_stored_results"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.results.CompareResultsActivity"
+            android:label="@string/title_activity_compare_results"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>
